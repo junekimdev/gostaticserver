@@ -1,0 +1,22 @@
+# Git repo
+/.git
+.gitignore
+
+# All Markdown documents except README
+*.md
+!README*.md
+
+# misc
+.DS_Store
+.env*
+*.env
+/.vscode
+placeholder_*
+
+# Volumes
+/public
+
+# Builders
+Makefile
+Dockerfile
+docker-compose*

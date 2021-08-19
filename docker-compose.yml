@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  dev-static:
+    image: junekimdev/gostatic:1.0-alpine
+    container_name: dev-static
+    restart: unless-stopped
+    expose:
+      - 8080
+    volumes:
+      - ./public:/root/public
+    networks:
+      - nginx-proxy
+
+networks:
+  nginx-proxy:
+    external: true
