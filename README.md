@@ -7,6 +7,7 @@ A bare minimum web server that only serves static files over the internet
 ```shell
 git clone https://github.com/junekimdev/gostaticserver.git staticserver
 cd staticserver
+mkdir public
 ```
 
 ## Build

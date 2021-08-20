@@ -29,6 +29,9 @@ pids
 /.vscode
 placeholder_*
 
+# volumes
+/public/
+
 # debug
 .idea
 npm-debug.log*
