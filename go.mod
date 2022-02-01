@@ -1,3 +1,3 @@
-module github.com/junekimdev/godevwebrtc
+module github.com/junekimdev/gostatic
 
 go 1.17
