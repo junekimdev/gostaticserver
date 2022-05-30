@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 	"net/http"
 	"path"
@@ -12,9 +13,14 @@ type MyFs struct {
 }
 
 func (m MyFs) Open(name string) (http.File, error) {
+	fmt.Printf("Requested: %+v\n", name)
 	file, err := m.Dir.Open(name)
 	if err != nil {
 		return nil, err
+	}
+
+	if name == "/" {
+		return file, nil
 	}
 
 	info, err := file.Stat()
